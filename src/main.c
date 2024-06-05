@@ -84,18 +84,23 @@ int main(/* int argc, char *argv[] */) {
 
         switch (c) {
             case 65:  // up arrow
+            case 107:
                 has_move = board_move_up(board, &score);
                 break;
             case 66:  // down arrow
+            case 106:    
                 has_move = board_move_down(board, &score);
                 break;
             case 67:  // right arrow
+            case 108:
                 has_move = board_move_right(board, &score);
                 break;
             case 68:  // left arrow
+            case 104:
                 has_move = board_move_left(board, &score);
                 break;
         }
+
 
         if (has_move) {
             // save the current board
